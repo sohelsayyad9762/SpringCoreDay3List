@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="e" class="com.tech.Employee">
+	<property name="id" value="100"></property>
+	<property name="name" value="Ms"></property>
+	<property name="mobilnumber">
+	<list>
+	<value>1111111</value>
+	<value>2222222</value>
+	<value>3333333</value>
+	</list>
+	</property>
+	
+	<property name="number">
+	<set>
+	<value>10</value>
+	<value>20</value>
+	<value>30</value>
+	<value>40</value>
+	<value>40</value>
+	</set>
+	</property>
+	
+	<property name="maps">
+	<map>
+	<entry key="10" value="aa"></entry>
+	<entry key="20" value="bb"></entry>
+	<entry key="30" value="cc"></entry>
+	
+	</map>
+	</property>
+	</bean>
+	
+	</beans>
